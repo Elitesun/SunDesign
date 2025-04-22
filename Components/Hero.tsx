@@ -18,8 +18,8 @@ const Hero = () => (
             />
         </div>
         <div className="custom-screen py-12 text-gray-600 relative z-10">
-            <div className="space-y-5 max-w-4xl mx-auto text-center backdrop-blur-sm bg-white/30 rounded-2xl p-8">
-                <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
+            <div className="space-y-5 max-w-4xl mx-auto text-center backdrop-blur-sm bg-white/30 rounded-2xl p-8" data-aos="zoom-in" data-aos-duration="1000">
+                <h1 className="text-2xl md:text-4xl lg:text-6xl text-gray-800 font-extrabold mx-auto" data-aos="fade-down" data-aos-delay="200">
                     <span className="relative">
                         <TrueFocus
                             sentence="Well Designed"
@@ -39,39 +39,39 @@ const Hero = () => (
                     </span>
                 </h1>
 
-                <p className="max-w-xl mx-auto">
+                <p className="max-w-xl mx-auto text-base sm:text-lg md:text-xl" data-aos="fade-up" data-aos-delay="400">
                     Be a pro at designing landing pages that convert. Get access to our
                     design kit with 100+ components, 15+ landing pages and 10+ full templates built in Figma.
                 </p>
-                <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-                    <span className="text-white text-bold text-lg bg-gradient-to-r from-blue-800 via-indigo-900 to-indigo-700 py-2 px-4 rounded-lg hover:from-violet-900 hover:via-violet-800 hover:to-blue-900 hover:ring ring-transparent ring-offset-2 transition">
+                <div className="flex items-center justify-center gap-x-3 font-medium" data-aos="fade-up" data-aos-delay="600">
+                    <span className="text-white text-base sm:text-lg bg-gradient-to-r from-blue-800 via-indigo-900 to-indigo-700 py-2 px-4 rounded-lg hover:from-violet-900 hover:via-violet-800 hover:to-blue-900 hover:ring ring-transparent ring-offset-2 transition">
                         Join Us
                     </span>
                 </div>
-                <span className="text-md font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-violet-900 to-blue-500 ">
+                <span className="text-sm sm:text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-violet-900 to-blue-500" data-aos="fade-up" data-aos-delay="800">
                     SPECIAL 40% OFF <span className="line-through text-black">$49</span>   $29
                 </span>
-                <h2 className="font-semibold text-sm text-gray-600 text-center mb-4">
+                <h2 className="font-semibold text-xs sm:text-sm text-gray-600 text-center mb-4" data-aos="fade-up" data-aos-delay="1000">
                     JOIN 430+ USERS NOW
                 </h2>
-                <div className="flex flex-wrap items-center justify-center">
+                <div className="flex flex-wrap items-center justify-center" data-aos="fade-up" data-aos-delay="1200">
                     <img
-                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white transform hover:scale-110 transition-transform duration-200"
                         src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                     />
                     <img
-                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white -ml-2 transform hover:scale-110 transition-transform duration-200"
                         src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                     />
                     <img
-                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white -ml-2 transform hover:scale-110 transition-transform duration-200"
                         src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                         alt=""
                     />
                     <img
-                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+                        className="inline-block h-10 w-10 rounded-full ring-2 ring-white -ml-2 transform hover:scale-110 transition-transform duration-200"
                         src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                     />
