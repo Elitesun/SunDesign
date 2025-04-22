@@ -1,3 +1,4 @@
+"use client";
 import TrueFocus from "./ui/TrueFocus";
 import MetaBalls from "./ui/MetalBalls";
 
