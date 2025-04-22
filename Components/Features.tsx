@@ -26,10 +26,10 @@ const Features = () => {
                             design kit on Figma!
                         </p>
                         <div className="mt-4" data-aos="fade-up" data-aos-delay="500">
-                            <span className="text-xl">$29 (one-time)</span>
+                            <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">$29 (one-time)</span>
                             <br />
-                            <span className="text-md font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
-                                SPECIAL 40% OFF{" "}
+                            <span className="text-sm sm:text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-violet-900 to-blue-500" data-aos="fade-up" data-aos-delay="800">
+                            SPECIAL 40% OFF{" "}
                                 <span className="line-through text-black">$49</span> $29
                             </span>
                         </div>

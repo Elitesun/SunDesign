@@ -35,7 +35,7 @@ const Hero = () => (
                     {" "}Landing Page{" "}
                     that {" "}
                     <span className="relative">
-                        Convert 🚀
+                        Convert
                         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-[#4C0099] via-[#6600CC] to-[#4C0099]"> </span>
                     </span>
                 </h1>
