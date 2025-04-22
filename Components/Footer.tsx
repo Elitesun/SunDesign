@@ -32,7 +32,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="pt-10 bg-gray-50" id='footer'>
+        <footer className="pt-10" id='footer'>
             <div className="custom-screen">
                 <div className="gap-12 justify-between md:flex">
                     <div className="flex-1" data-aos="fade-up" data-aos-delay="100">

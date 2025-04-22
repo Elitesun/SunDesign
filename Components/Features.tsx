@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Features = () => {
     return (
-        <section id="features" className="py-12 bg-gray-50">
+        <section id="features" className="py-12">
             <div className="custom-screen">
                 <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center gap-x-12 gap-y-8">
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end" data-aos="fade-right" data-aos-delay="100">
@@ -29,7 +29,7 @@ const Features = () => {
                             <span className="font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-500">$29 (one-time)</span>
                             <br />
                             <span className="text-sm sm:text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-violet-900 to-blue-500" data-aos="fade-up" data-aos-delay="800">
-                            SPECIAL 40% OFF{" "}
+                                SPECIAL 40% OFF{" "}
                                 <span className="line-through text-black">$49</span> $29
                             </span>
                         </div>
