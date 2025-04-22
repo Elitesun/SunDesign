@@ -1,12 +1,15 @@
 "use client";
 import { useState } from 'react'
 import Brand from './Brand';
+import ShinyText from './ui/ShinyText';
 
 const Navbar = () => {
     const [state, setState] = useState(false)
 
     const navigation = [
-        { title: "Features", path: "#features" }
+        { title: "Home", path: "#home" },
+        { title: "Features", path: "#features" },
+        { title: "Footer", path: "#footer" },
     ]
 
     const handleNavMenu = () => {
@@ -26,7 +29,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <nav className={`bg-white w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
+            <nav className={` w-full md:static md:text-sm ${state ? "fixed z-10 h-full" : ""}`}>
                 <div className="custom-screen items-center mx-auto md:flex">
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Brand />
@@ -66,8 +69,8 @@ const Navbar = () => {
                             }
                             <li>
                                 <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-                                    <span className="text-white text-bold text-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 py-2 px-4 rounded-lg hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 hover:ring ring-transparent ring-offset-2 transition">
-                                        $29 (one-time)
+                                    <span className="text-white text-bold text-lg bg-gradient-to-r from-blue-800 via-indigo-900 to-indigo-700 py-2 px-4 rounded-lg hover:from-violet-900 hover:via-violet-800 hover:to-blue-900 hover:ring ring-transparent ring-offset-2 transition">
+                                        <ShinyText text="Join Waiting List!" disabled={false} speed={3} className='custom-class' />
                                     </span>
                                 </div>
                             </li>

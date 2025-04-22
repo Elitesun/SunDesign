@@ -1,6 +1,7 @@
 import Nav from "@/Components/Nav";
 import Hero from "@/Components/Hero";
 import Features from "@/Components/Features";
+import Footer from "@/Components/Footer";
 
 const Page = () => {
   return (
@@ -8,6 +9,7 @@ const Page = () => {
       <Nav />
       <Hero />
       <Features />
+      <Footer />
     </main>
   );
 }

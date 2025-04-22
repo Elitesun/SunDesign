@@ -31,7 +31,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className="pt-10 bg-gray-50">
+        <footer className="pt-10" id='footer'>
             <div className="custom-screen">
                 <div className="gap-12 justify-between md:flex">
                     <div className="flex-1">
@@ -60,7 +60,7 @@ const Footer = () => {
                         ))}
                     </div>
                 </div>
-                <div className="mt-8 py-6 items-center justify-between sm:flex">
+                <div className="mt-8 items-center justify-between sm:flex">
                     <div className="mt-4 sm:mt-0">
                         &copy; 2025 Sundesign. All rights reserved.
                     </div>

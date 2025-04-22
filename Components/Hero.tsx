@@ -1,17 +1,41 @@
+import TrueFocus from "./ui/TrueFocus";
+import MetaBalls from "./ui/MetalBalls";
+
 const Hero = () => (
-    <section id="home" className="relative">
-        <div className="custom-screen py-28 text-gray-600">
-            <div className="space-y-5 max-w-4xl mx-auto text-center">
+    <section id="home" className="relative min-h-screen overflow-hidden">
+        <div className="absolute inset-0 opacity-40">
+            <MetaBalls
+                color="#4C0099"
+                cursorBallColor="#6600CC"
+                cursorBallSize={2}
+                ballCount={19}
+                animationSize={30}
+                enableMouseInteraction={true}
+                enableTransparency={true}
+                hoverSmoothness={0.05}
+                clumpFactor={1}
+                speed={0.3}
+            />
+        </div>
+        <div className="custom-screen py-12 text-gray-600 relative z-10">
+            <div className="space-y-5 max-w-4xl mx-auto text-center backdrop-blur-sm bg-white/30 rounded-2xl p-8">
                 <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
                     <span className="relative">
-                        Well-Designed
-                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-green-500 via-blue-500 to-purple-500"></span>
+                        <TrueFocus
+                            sentence="Well Designed"
+                            manualMode={false}
+                            blurAmount={5}
+                            borderColor="#4C0099"
+                            animationDuration={2}
+                            pauseBetweenAnimations={1}
+                        />
                     </span>
+
                     {" "}Landing Page{" "}
-                    Components that {" "}
+                    that {" "}
                     <span className="relative">
                         Convert 🚀
-                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"> </span>
+                        <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-[#4C0099] via-[#6600CC] to-[#4C0099]"> </span>
                     </span>
                 </h1>
 
@@ -20,11 +44,11 @@ const Hero = () => (
                     design kit with 100+ components, 15+ landing pages and 10+ full templates built in Figma.
                 </p>
                 <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-                    <span className="text-white text-bold text-lg bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 mb-5 hover:from-yellow-500 hover:via-red-500 hover:to-pink-500 hover:ring ring-transparent ring-offset-2 transition">
-                        $29 (one-time)
+                    <span className="text-white text-bold text-lg bg-gradient-to-r from-blue-800 via-indigo-900 to-indigo-700 py-2 px-4 rounded-lg hover:from-violet-900 hover:via-violet-800 hover:to-blue-900 hover:ring ring-transparent ring-offset-2 transition">
+                        Join Us
                     </span>
                 </div>
-                <span className="text-md font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 ">
+                <span className="text-md font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 via-violet-900 to-blue-500 ">
                     SPECIAL 40% OFF <span className="line-through text-black">$49</span>   $29
                 </span>
                 <h2 className="font-semibold text-sm text-gray-600 text-center mb-4">
