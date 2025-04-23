@@ -6,12 +6,6 @@ import { useState } from 'react';
 const Navbar = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    // const navigation = [
-    //     // { title: "Home", path: "#home" },
-    //     // { title: "Features", path: "#features" },
-    //     // { title: "Footer", path: "#footer" },
-    // ]
-
     const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
         e.preventDefault();
         const element = document.querySelector(path);
@@ -29,7 +23,7 @@ const Navbar = () => {
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
                         <Brand />
                         <button
-                            className="md:hidden"
+                            className="md:hidden text-gray-500 hover:text-gray-800 transition-colors"
                             onClick={() => setIsNavOpen(!isNavOpen)}
                         >
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -43,23 +37,9 @@ const Navbar = () => {
                     </div>
                     <div className={`${isNavOpen ? 'block' : 'hidden'} flex-1 pb-3 mt-8 md:pb-0 md:mt-0 md:flex md:items-center md:justify-end`}>
                         <ul className="text-gray-700 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-gray-600 md:font-medium">
-                            {/* {
-                                navigation.map((item, idx) => {
-                                    return (
-                                        <li key={idx} className="duration-150 hover:text-gray-900">
-                                            <a
-                                                href={item.path}
-                                                onClick={(e) => handleSmoothScroll(e, item.path)}
-                                            >
-                                                {item.title}
-                                            </a>
-                                        </li>
-                                    )
-                                })
-                            } */}
                             <li>
                                 <div className="flex items-center justify-center gap-x-3 font-medium text-sm">
-                                    <span className="text-white text-bold text-lg bg-gradient-to-r from-blue-800 via-indigo-900 to-indigo-700 py-2 px-4 rounded-lg hover:from-violet-900 hover:via-violet-800 hover:to-blue-900 hover:ring ring-transparent ring-offset-2 transition">
+                                    <span className="text-white text-bold text-lg bg-gradient-to-r from-[#8B5CF6] via-[#7C3AED] to-[#A78BFA] py-2 px-4 rounded-lg hover:from-[#A78BFA] hover:via-[#7C3AED] hover:to-[#8B5CF6] hover:ring ring-transparent ring-offset-2 transition">
                                         <ShinyText text="Join Waiting List!" disabled={false} speed={3} className='custom-class' />
                                     </span>
                                 </div>
