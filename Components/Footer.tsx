@@ -7,11 +7,11 @@ const Footer = () => {
             label: "Resources",
             items: [
                 {
-                    href: '/',
+                    href: 'https://github.com/Elitesun/SunDesign',
                     name: 'About us'
                 },
                 {
-                    href: '/',
+                    href: 'https://github.com/Elitesun',
                     name: 'Contact'
                 }
             ]

@@ -1,6 +1,7 @@
 "use client";
 import TrueFocus from "./ui/TrueFocus";
 import MetaBalls from "./ui/MetalBalls";
+import Link from "next/link";
 
 const Hero = () => (
     <section id="home" className="relative min-h-screen overflow-hidden">
@@ -41,41 +42,43 @@ const Hero = () => (
                     </span>
                 </h1>
 
-                <p className="max-w-xl mx-auto text-base sm:text-lg md:text-xl" data-aos="fade-up" data-aos-delay="400">
-                    Be a pro at designing landing pages that convert. Get access to our
-                    design kit with 100+ components, 15+ landing pages and 10+ full templates built in Figma.
+                <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl" data-aos="fade-up" data-aos-delay="400">
+                    Be a pro at designing landing pages that convert. Get access to 16+ pre-designed landing pages, 10+ full templates, and a complete
+                    design kit with 100+ components,built in Figma.
                 </p>
-                <div className="flex items-center justify-center gap-x-3 font-medium" data-aos="fade-up" data-aos-delay="600">
-                    <span className="text-white text-base sm:text-lg bg-gradient-to-r from-[#8B5CF6] via-[#7C3AED] to-[#A78BFA] py-2 px-4 rounded-lg hover:from-[#A78BFA] hover:via-[#7C3AED] hover:to-[#8B5CF6] hover:ring ring-transparent ring-offset-2 transition">
-                        Join Us
-                    </span>
-                </div>
-                <span className="text-sm sm:text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8B5CF6] via-[#7C3AED] to-[#A78BFA]" data-aos="fade-up" data-aos-delay="800">
-                    SPECIAL 40% OFF <span className="line-through text-black">$49</span>   $29
+                <Link href={"https://www.figma.com/community/file/1186347039232004456"}>
+                    <div className="mb-2 flex items-center justify-center gap-x-3 font-medium" data-aos="fade-up" data-aos-delay="600">
+                        <span className="text-white text-base sm:text-lg bg-gradient-to-r from-[#8B5CF6] via-[#7C3AED] to-[#A78BFA] py-2 px-4 rounded-lg hover:from-[#A78BFA] hover:via-[#7C3AED] hover:to-[#8B5CF6] hover:ring ring-transparent ring-offset-2 transition">
+                            Join Us
+                        </span>
+                    </div>
+                </Link>
+                <span className="mt-2 text-sm sm:text-base md:text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#8B5CF6] via-[#7C3AED] to-[#A78BFA]" data-aos="fade-up" data-aos-delay="800">
+                    Free Forever Yes Free
                 </span>
                 <h2 className="font-semibold text-xs sm:text-sm text-gray-600 text-center mb-4" data-aos="fade-up" data-aos-delay="1000">
-                    JOIN 430+ USERS NOW
+                    JOIN 100+ USERS NOW
                 </h2>
                 <div className="flex flex-wrap items-center justify-center" data-aos="fade-up" data-aos-delay="1200">
                     <img
                         className="inline-block h-10 w-10 rounded-full ring-2 ring-white transform hover:scale-110 transition-transform duration-200"
-                        src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
+                        src="https://randomuser.me/api/portraits/men/83.jpg"
+                        alt="Black man"
                     />
                     <img
                         className="inline-block h-10 w-10 rounded-full ring-2 ring-white -ml-2 transform hover:scale-110 transition-transform duration-200"
-                        src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
+                        src="https://randomuser.me/api/portraits/women/81.jpg"
+                        alt="Black woman"
                     />
                     <img
                         className="inline-block h-10 w-10 rounded-full ring-2 ring-white -ml-2 transform hover:scale-110 transition-transform duration-200"
-                        src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
-                        alt=""
+                        src="https://randomuser.me/api/portraits/men/88.jpg"
+                        alt="Black man"
                     />
                     <img
                         className="inline-block h-10 w-10 rounded-full ring-2 ring-white -ml-2 transform hover:scale-110 transition-transform duration-200"
-                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt=""
+                        src="https://randomuser.me/api/portraits/women/86.jpg"
+                        alt="Black woman"
                     />
                 </div>
             </div>
